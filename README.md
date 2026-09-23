@@ -1,57 +1,92 @@
-# Micronaut Framework
+Micronaut Test Project
 
-[![Build Status](https://github.com/micronaut-projects/micronaut-core/workflows/Java%20CI/badge.svg)](https://github.com/micronaut-projects/micronaut-core/actions)
-[![Revved up by Develocity](https://img.shields.io/badge/Revved%20up%20by-Develocity-06A0CE?logo=Gradle&labelColor=02303A)](https://ge.micronaut.io/scans)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=micronaut-projects_micronaut-core&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=micronaut-projects_micronaut-core)
 
-[Micronaut Framework](https://micronaut.io) is a modern, JVM-based, full stack Java framework designed for building modular, easily testable JVM applications with support for Java, Kotlin and the Groovy language.
 
-The Micronaut framework was originally created by a team who had also worked on the Grails framework. The Micronaut framework takes inspiration from lessons learned over the years building real-world applications from monoliths to microservices using Spring, Spring Boot and the Grails framework. The core team continues to develop and maintain the Micronaut project through the support of the Micronaut Foundation.
 
-Micronaut Framework aims to provide all the tools necessary to build JVM applications including:
 
-* Dependency Injection and Inversion of Control (IoC)
-* Aspect Oriented Programming (AOP)
-* Sensible Defaults and Auto-Configuration
+Micronaut Test Project is a small example project created for testing, experimentation, and development purposes.
 
-With Micronaut Framework you can build Message-Driven Applications, Command Line Applications, HTTP Servers and more whilst for Microservices in particular Micronaut Framework also provides:
+This repository provides a simple JVM-based application structure inspired by modern application frameworks. It is intended to demonstrate common concepts such as dependency injection, configuration, HTTP services, and modular application development.
 
-* Distributed Configuration
-* Service Discovery
-* HTTP Routing
-* Client-Side Load Balancing
+Note: This is a dummy/test project and is not an official Micronaut Framework repository.
 
-At the same time Micronaut Framework aims to avoid the downsides of frameworks like Spring, Spring Boot and Grails by providing:
+Features
 
-* Fast startup time
-* Reduced memory footprint
-* Minimal use of reflection
-* Minimal use of proxies
-* No runtime bytecode generation
-* Easy Unit Testing
+The project can be used to experiment with:
 
-This is achieved by pre-computing the framework infrastructure at compilation time which reduces the logic required at runtime for the application to work.
+Dependency Injection and Inversion of Control (IoC)
 
-For more information on using Micronaut Framework see the documentation at [micronaut.io](https://micronaut.io)
+Application configuration
 
-## Example Applications
+HTTP routing
 
-Example Micronaut applications can be found in [guides.micronaut.io](https://guides.micronaut.io)
+Basic service implementations
 
-## Building From Source
+Unit and integration testing
 
-To build from source checkout the code and run:
+Modular JVM application development
 
-```
-./gradlew publishToMavenLocal
-```
+Gradle-based builds
 
-To build the documentation run `./gradlew docs`. The documentation is built to `build/docs/index.html`.
+Example Application
 
-## Contributing Code
+The repository contains a minimal example application that can be used for local development and testing.
 
-If you wish to contribute to the development of Micronaut Framework please read the [CONTRIBUTING.md](CONTRIBUTING.md)
+You can modify the application to experiment with different configurations, controllers, services, and tests.
 
-## Versioning
+Building From Source
 
-Micronaut Framework uses Semantic Versioning 2.0.0. To understand what that means, please see the specification [documentation](https://semver.org/). Exclusions to Micronaut Framework's public API include any classes annotated with `@Experimental` or `@Internal`, which reside in the `io.micronaut.core.annotation` package.
+Clone the repository and run:
+
+./gradlew build
+
+
+To run the tests:
+
+./gradlew test
+
+
+To run the application:
+
+./gradlew run
+
+Project Structure
+
+A typical project structure looks like:
+
+micronaut-test-project/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   └── test/
+│       └── java/
+├── build.gradle
+├── gradle.properties
+├── gradlew
+└── README.md
+
+Testing
+
+This project is intended to provide a lightweight environment for testing application changes.
+
+Run the complete test suite with:
+
+./gradlew test
+
+Contributing
+
+This is a test and demonstration project. Feel free to modify the source code, add tests, or experiment with different application features.
+
+Versioning
+
+The project uses a simple versioning scheme for test releases.
+
+Current development versions may use formats such as:
+
+0.1.0-SNAPSHOT
+0.2.0-SNAPSHOT
+1.0.0
+
+Disclaimer
+
+This repository is a fictional test project created for development and experimentation. It is not affiliated with, maintained by, or endorsed by the Micronaut Foundation or the official Micronaut project.
