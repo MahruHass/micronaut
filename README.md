@@ -1,92 +1,56 @@
-Micronaut Test Project
+# Micronaut
 
+A simple dummy project built with the **Micronaut Framework** for testing, learning, and experimentation.
 
+## Overview
 
+**Dummy Micronaut Test Project** is a lightweight JVM application demonstrating the basic structure and features of a Micronaut application.
 
+The project includes examples of:
 
-Micronaut Test Project is a small example project created for testing, experimentation, and development purposes.
+- Dependency Injection
+- Inversion of Control (IoC)
+- HTTP Controllers
+- Service Classes
+- Application Configuration
+- Unit Testing
+- Integration Testing
+- Gradle-based builds
 
-This repository provides a simple JVM-based application structure inspired by modern application frameworks. It is intended to demonstrate common concepts such as dependency injection, configuration, HTTP services, and modular application development.
+> **Note:** This is a fictional/demo project created for testing and educational purposes. It is not intended for production use.
 
-Note: This is a dummy/test project and is not an official Micronaut Framework repository.
+## Technologies
 
-Features
+- Java
+- Micronaut Framework
+- Gradle
+- JUnit
+- HTTP/REST
 
-The project can be used to experiment with:
+## Project Structure
 
-Dependency Injection and Inversion of Control (IoC)
-
-Application configuration
-
-HTTP routing
-
-Basic service implementations
-
-Unit and integration testing
-
-Modular JVM application development
-
-Gradle-based builds
-
-Example Application
-
-The repository contains a minimal example application that can be used for local development and testing.
-
-You can modify the application to experiment with different configurations, controllers, services, and tests.
-
-Building From Source
-
-Clone the repository and run:
-
-./gradlew build
-
-
-To run the tests:
-
-./gradlew test
-
-
-To run the application:
-
-./gradlew run
-
-Project Structure
-
-A typical project structure looks like:
-
-micronaut-test-project/
+```text
+dummy-micronaut-test/
 ├── src/
 │   ├── main/
-│   │   └── java/
+│   │   ├── java/
+│   │   │   └── example/
+│   │   │       ├── Application.java
+│   │   │       ├── controller/
+│   │   │       │   └── HelloController.java
+│   │   │       └── service/
+│   │   │           └── HelloService.java
+│   │   │
+│   │   └── resources/
+│   │       └── application.yml
+│   │
 │   └── test/
 │       └── java/
+│           └── example/
+│               └── HelloControllerTest.java
+│
 ├── build.gradle
-├── gradle.properties
 ├── gradlew
+├── gradlew.bat
+├── settings.gradle
 └── README.md
-
-Testing
-
-This project is intended to provide a lightweight environment for testing application changes.
-
-Run the complete test suite with:
-
-./gradlew test
-
-Contributing
-
-This is a test and demonstration project. Feel free to modify the source code, add tests, or experiment with different application features.
-
-Versioning
-
-The project uses a simple versioning scheme for test releases.
-
-Current development versions may use formats such as:
-
-0.1.0-SNAPSHOT
-0.2.0-SNAPSHOT
-1.0.0
-
-Disclaimer
-
-This repository is a fictional test project created for development and experimentation. It is not affiliated with, maintained by, or endorsed by the Micronaut Foundation or the official Micronaut project.
